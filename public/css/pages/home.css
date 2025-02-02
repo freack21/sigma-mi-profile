@@ -1,0 +1,137 @@
+@import "../sections/articles.css";
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.5% 5%;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat center center/cover;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: left;
+  color: #fff;
+  background: linear-gradient(
+    to right,
+    rgba(var(--secondary-color-rgb), 0.9),
+    rgba(var(--secondary-color-rgb), 0.6),
+    rgba(var(--secondary-color-rgb), 0.3)
+  );
+  padding: 2rem;
+  width: 45%;
+  /* border-radius: 0.5rem; */
+}
+
+.hero-content h1 {
+  font-size: 2em;
+}
+
+.hero-content p {
+  font-size: 1em;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  padding-top: 6rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--border-color);
+  height: 100%;
+  cursor: help;
+  position: relative;
+  z-index: 1;
+}
+
+.service:hover {
+  border: 1px solid var(--secondary-color);
+  /* border: 1px solid var(--secondary-color); */
+  /* color: var(--secondary-color); */
+}
+
+.service h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.service p {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.service .link {
+  position: absolute;
+  bottom: 1rem;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0.5rem;
+}
+.highlight.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+}
+.highlight.right .line-light {
+  background: linear-gradient(
+    to left,
+    var(--fifth-color),
+    rgba(var(--fifth-color-rgb), 0.5),
+    rgba(var(--fifth-color-rgb), 0.25)
+  );
+}
+
+.highlight h1 {
+  font-size: 2em;
+}
+
+.highlight .btn {
+  font-size: 0.9em;
+}
+
+.section-title {
+  width: fit-content;
+  font-size: 1.25em;
+}
+
+.section-title .line-light {
+  margin-top: 0.5rem;
+  width: 120%;
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2.5% 5%;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 1.55em;
+  }
+
+  .hero-content p {
+    font-size: 0.9em;
+  }
+}

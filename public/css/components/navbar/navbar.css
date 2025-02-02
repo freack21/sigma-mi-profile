@@ -1,0 +1,32 @@
+header {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 15%;
+  width: 100%;
+  position: fixed;
+  height: max-content;
+  box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+header.hidden {
+  transform: translateY(-100%);
+}
+
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.logo img {
+  width: 64px;
+}
+
+.logo img.tag {
+  width: 96px;
+}
