@@ -7,11 +7,10 @@
 
   <script src="https://unpkg.com/feather-icons"></script>
 
-  <title>Beranda  | Sigma Mutu Indonesia</title>
+  <title>{{ $title ?? "Sigma Mutu Indonesia" }}</title>
   <link rel="shortcut icon" href="{{ asset('favicon/favicon.ico') }}" type="image/x-icon">
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <link rel="stylesheet" href="{{ asset('css/components/navbar/index.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/pages/home.css') }}">
 </head>
 <body>
   <header>

@@ -1,9 +1,10 @@
-@include('layouts.header')
+@include('landingpage.layouts.header')
 
+<link rel="stylesheet" href="{{ asset('css/pages/home.css') }}">
 <main>
   <section class="hero">
     <div class="hero-content">
-      <h1>Selamat Datang di <br> Sigma Mutu Indonesia</h1>
+      <h1>Selamat Datang di <br> PT. Sigma Mutu Indonesia</h1>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt nulla unde dolor vitae nisi aliquid!</p>
       <a href="#" class="btn">Pelajari Lebih Lanjut</a>
     </div>
@@ -66,8 +67,8 @@
   </section>
 
   <section class="articles">
-    @include('sections.articles')
+    @include('landingpage.sections.articles')
   </section>
 </main>
 
-@include('layouts.footer')
+@include('landingpage.layouts.footer')

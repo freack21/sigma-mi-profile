@@ -6,7 +6,7 @@ window.addEventListener("scroll", () => {
   const currentScrollY = window.scrollY;
 
   if (currentScrollY > window.innerHeight) {
-    if (currentScrollY > lastScrollY && !menuList.classList.contains("show")) {
+    if (currentScrollY >= lastScrollY && !menuList.classList.contains("show")) {
       header.classList.add("hidden");
     } else {
       header.classList.remove("hidden");

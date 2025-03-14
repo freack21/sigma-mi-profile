@@ -1,0 +1,116 @@
+header {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  padding: 0.5rem 5%;
+  position: fixed;
+  height: max-content;
+  /* box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2); */
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.logo img {
+  width: 64px;
+}
+
+.logo img.tag {
+  width: 96px;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  min-width: 320px;
+  width: 32%;
+  min-height: 320px;
+  height: max-content;
+
+  padding: 2rem 2rem;
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 1rem;
+}
+
+.title h2 {
+  font-size: 1.85em;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.title p {
+  margin-top: 0.1rem;
+  font-size: 0.8em;
+  color: var(--dark-color);
+}
+
+.login-input {
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+
+  width: 100%;
+
+  flex-direction: column;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--dark-color);
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.input-group input {
+  display: block;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 100%;
+
+  padding: 0.5rem 0.75rem;
+
+  font-size: 1em;
+}
+
+#warningSign {
+  background-color: rgba(var(--third-color-rgb), 0.8);
+  padding: 0.75rem 1rem;
+  color: white;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

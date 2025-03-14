@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\LandingPageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-  return view('pages.home');
+Route::get('/', [LandingPageController::class, 'home']);
+
+Route::get('/description/{slug}', [LandingPageController::class, 'description']);
+
+Route::get('/article', [LandingPageController::class, 'article']);
+
+Route::controller(AdminController::class)->prefix("admin")->group(function () {
+  Route::get('/', 'home');
+  Route::get('/login', 'login')->middleware('alreadyLoggedIn');
+  Route::post('/do-login', 'doLogin');
+  Route::get('/dashboard', 'dashboard')->middleware('isLoggedIn');
+  Route::get('/logout', 'logout');
 });

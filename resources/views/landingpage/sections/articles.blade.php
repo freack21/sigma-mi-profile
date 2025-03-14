@@ -10,14 +10,14 @@
   <div id="article-desktop">
     <div class="row">
       <div class="col-6">
-        <div id="headnews" data-bg='url("https://images.unsplash.com/photo-1503694978374-8a2fa686963a?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'>
+        <a href="/article" id="headnews" data-bg='url("https://images.unsplash.com/photo-1503694978374-8a2fa686963a?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'>
           <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorum?</h3>
           <p>21 April 20XX</p>
-        </div>
+        </a>
       </div>
       <div class="col-6">
         <div id="otherNews">
-          <div id="secondNews" class="other-news">
+          <a href="/article" id="secondNews" class="other-news">
             <div class="img">
               <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="News Image">
             </div>
@@ -25,12 +25,12 @@
               <span>21 April 20XX</span>
               <h4 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, animi.</h4>
             </div>
-          </div>
-          <div id="thirdNews" class="other-news">
+          </a>
+          <a href="/article" id="thirdNews" class="other-news">
             <span>21 April 20XX</span>
             <h3 class="title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim repudiandae tempore id. Cumque deleniti quis facilis sequi ducimus nostrum placeat aliquid quidem recusandae distinctio! Fugiat facere veritatis alias officiis debitis.</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod vitae dolore culpa fugit! Autem sapiente facere dolorem quibusdam dolorum.</p>
-          </div>
+          </a>
         </div>
       </div>
     </div>
