@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [LandingPageController::class, 'home']);
 
-Route::get('/description/{slug}', [LandingPageController::class, 'description']);
+Route::get('/service/{slug}', [LandingPageController::class, 'service']);
 
 Route::get('/article', [LandingPageController::class, 'article']);
 

@@ -44,10 +44,10 @@
   
       <div id="menuList">
         <div class="menu-items" id="menuList-sertifikasi">
-          <a href="#"><p>ISO 9001:2015</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
+          <a href="/service/sertifikasi-9001-2015"><p>ISO 9001:2015</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
           <a href="#"><p>ISO 14001:2018</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
           <a href="#"><p>ISO 4500:2018</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>ISO 22000</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
+          <a href="/service/sertifikasi-22000-2018"><p>ISO 22000:2018</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
           <a href="#"><p>HACCP</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
           <a href="#"><p>GMP</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
           <a href="#"><p>Sertifikasi Halal</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
@@ -64,13 +64,13 @@
           <a href="#"><p>Pelatihan Kalibrasi</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
         </div>
         <div class="menu-items" id="menuList-kalibrasi">
-          <a href="#"><p>Massa</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>Suhu</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>Volume</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>Gaya</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>Tekanan</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>Dimensi</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>Kelistrikan</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
+          <a href="/service/kalibrasi-massa"><p>Massa</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
+          <a href="/service/kalibrasi-suhu"><p>Suhu</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
+          <a href="/service/kalibrasi-volumetrik"><p>Volume</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
+          <a href="/service/kalibrasi-gaya"><p>Gaya</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
+          <a href="/service/kalibrasi-kelembaban"><p>Kelembaban & Kelembapan</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
+          <a href="/service/kalibrasi-dimensi"><p>Dimensi</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
+          <a href="/service/kalibrasi-kelistrikan"><p>Alat Ukur Listrik</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
         </div>
         <div class="menu-items" id="menuList-pengurusanSNI">
           <a href="#"><p>SNI Produk Ban</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
@@ -109,10 +109,10 @@
         <div class="menu-list">
           <a href="#" data-list="sertifikasi"><p>Sertifikasi</p> <div class="icon-selected-menu"><i data-feather="chevron-right" width="16" height="16"></i></div></a>
           <div class="menu-items-mobile" id="menuListMobile-sertifikasi">
-            <a href="#"><p>ISO 9001:2015</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
+            <a href="/service/sertifikasi-9001-2015"><p>ISO 9001:2015</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
             <a href="#"><p>ISO 14001:2018</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
             <a href="#"><p>ISO 4500:2018</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>ISO 22000</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
+            <a href="/service/sertifikasi-22000-2018"><p>ISO 22000:2018</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
             <a href="#"><p>HACCP</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
             <a href="#"><p>GMP</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
             <a href="#"><p>Sertifikasi Halal</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
@@ -135,13 +135,13 @@
         <div class="menu-list">
           <a href="#" data-list="kalibrasi"><p>Kalibrasi</p> <div class="icon-selected-menu"><i data-feather="chevron-right" width="16" height="16"></i></div></a>
           <div class="menu-items-mobile" id="menuListMobile-kalibrasi">
-            <a href="#"><p>Massa</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>Suhu</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>Volume</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>Gaya</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>Tekanan</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>Dimensi</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>Kelistrikan</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
+            <a href="/service/kalibrasi-massa"><p>Massa</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
+            <a href="/service/kalibrasi-suhu"><p>Suhu</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
+            <a href="/service/kalibrasi-volumetrik"><p>Volume</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
+            <a href="/service/kalibrasi-gaya"><p>Gaya</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
+            <a href="/service/kalibrasi-kelembaban"><p>Kelembaban & Kelembapan</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
+            <a href="/service/kalibrasi-dimensi"><p>Dimensi</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
+            <a href="/service/kalibrasi-kelistrikan"><p>Alat Ukur Listrik</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
           </div>
         </div>
         <div class="menu-list">

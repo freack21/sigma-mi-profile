@@ -42,7 +42,7 @@
 .article-body {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .article-body p {
@@ -190,6 +190,10 @@
 .section-title .line-light {
   margin-top: 0.5rem;
   width: 120%;
+}
+
+ul {
+  margin-left: 2rem;
 }
 
 @media (max-width: 480px) {

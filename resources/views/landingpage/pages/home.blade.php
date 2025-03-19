@@ -42,8 +42,8 @@
           <div class="service">
             <i data-feather="activity" width="48" height="48"></i>
             <h2>Kalibrasi</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis harum deserunt pariatur autem qui quisquam.</p>
-            <a href="#" class="link">Pelajari Lebih Lanjut &rightarrow;</i></a>
+            <p>Kalibrasi adalah proses untuk memastikan bahwa instrumen atau alat ukur berfungsi dengan benar dan memberikan hasil yang akurat sesuai dengan standar yang telah ditentukan.</p>
+            <a href="/service/kalibrasi" class="link">Pelajari Lebih Lanjut &rightarrow;</i></a>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
