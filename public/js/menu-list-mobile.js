@@ -1,4 +1,4 @@
-const menuListMobile = document.querySelectorAll(".menu-list a");
+const menuListMobile = document.querySelectorAll(".menu-list a.parent-menu");
 const menuItemsMobile = document.querySelectorAll(".menu-items-mobile");
 
 menuListMobile.forEach((menuList) => {

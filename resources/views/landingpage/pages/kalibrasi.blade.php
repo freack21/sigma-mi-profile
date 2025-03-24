@@ -156,7 +156,7 @@
   </p>
   <ul>
     <li><p>
-      F.SOP.07.1-Pendaftaran Kalibrasi: <a href="/services/docs/Kalibrasi-Pendaftaran Kalibrasi.docx" class="link">Unduh File (.doc)</a></p>
+      F.SOP.07.1-Pendaftaran Kalibrasi: <a href="{{ asset('services/docs/Surat Pengaduan Pelanggan.docx') }}.docx" class="link">Unduh File (.doc)</a></p>
     </li>
   </ul>
 
@@ -168,7 +168,7 @@
   </p>
   <ul>
     <li><p>
-      F.SOP.08.1-Surat Penawaran Harga: <a href="/services/docs/Kalibrasi-Surat Penawaran Harga.docx" class="link">Unduh File (.doc)</a></p>
+      F.SOP.08.1-Surat Penawaran Harga: <a href="{{ asset('services/docs/Surat Pengaduan Pelanggan.docx') }}.docx" class="link">Unduh File (.doc)</a></p>
     </li>
   </ul>
 
@@ -180,7 +180,7 @@
   </p>
 
   <h4>
-    4. PENERBITAN SERTIFIKAT KLAIBRASI
+    4. PENERBITAN SERTIFIKAT KALIBRASI
   </h4>
   <p>
     Penerbitan sertifikat kalibrasi alat kepada pelanggan dengan waktu pelaksanaan yang telah disepakati
@@ -197,8 +197,8 @@
     Setiap pelanggan dapat megisikan formulir keluhan:
   </p>
   <ul>
-    <li><p>F.SOP.24.1-Surat Pengaduan Pelanggan: <a href="/services/docs/Surat Pengaduan Pelanggan.docx" class="link">Unduh File (.doc)</a></p></li>
-    <li><p>F.SOP 27-2-Pengajuan tanggung gugat dan keuangan: <a href="/services/docs/Pengajuan tanggung gugat dan keuangan.doc" class="link">Unduh File (.doc)</a></p></li>
+    <li><p>F.SOP.24.1-Surat Pengaduan Pelanggan: <a href="{{ asset('services/docs/Surat Pengaduan Pelanggan.docx') }}" class="link">Unduh File (.doc)</a></p></li>
+    <li><p>F.SOP 27-2-Pengajuan tanggung gugat dan keuangan: <a href="{{ asset('services/docs/Surat Pengaduan Pelanggan.docx') }}" class="link">Unduh File (.doc)</a></p></li>
   </ul>
   <h2>
     D. PENGKAJIAN GUGATAN

@@ -1,4 +1,4 @@
-const botMenus = document.querySelectorAll(".bot-menu a");
+const botMenus = document.querySelectorAll(".bot-menu a.parent-menu");
 var menuList = document.getElementById("menuList");
 const menuItems = document.querySelectorAll(".menu-items");
 

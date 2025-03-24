@@ -13,6 +13,56 @@
   <link rel="stylesheet" href="{{ asset('css/components/navbar/index.css') }}">
 </head>
 <body>
+  @php
+  $parent_menus = [
+    "Pengurusan SNI & TKDN" => "pengurusanSNI",
+    "Sertifikasi" => "sertifikasi",
+    "Pelatihan" => "pelatihan",
+    "Kalibrasi" => "kalibrasi",
+    "Konsultasi & Pembuatan Dokumen Mutu" => null,
+  ];
+
+  $child_menus = [
+    "Pengurusan SNI & TKDN" => [
+      "SNI Produk Ban" => null,
+      "SNI Baja" => null,
+      "SNI Helm" => null,
+      "SNI Pupuk" => null,
+      "SNI Toys" => null,
+      "SNI Produk Elektronik" => null,
+      "SNI Kompor" => null,
+      "SNI Produk Makanan & Minuman" => null,
+    ],
+    "Sertifikasi" => [
+      "ISO 9001:2015" => "/service/sertifikasi-9001-2015",
+      "ISO 14001:2018" => "/service/sertifikasi-14001-2018",
+      "ISO 45001:2018" => "/service/sertifikasi-45001-2018",
+      "ISO 22000:2018" => "/service/sertifikasi-22000-2018",
+      "Sertifikasi Halal" => "/service/sertifikasi-halal",
+    ],
+    "Pelatihan" => [
+      "ISO 9001:2015" => null,
+      "ISO 14001:2018" => null,
+      "ISO 4500:2018" => null,
+      "ISO 22000" => null,
+      "HACCP" => null,
+      "GMP" => null,
+      "Pelatihan Petugas Pengambil Contoh (PPC)" => null,
+      "Pelatihan Pengujian Produk" => null,
+      "Pelatihan Kalibrasi" => null,
+    ],
+    "Kalibrasi" => [
+      "Massa" => "/service/kalibrasi-massa",
+      "Suhu" => "/service/kalibrasi-suhu",
+      "Volume" => "/service/kalibrasi-volumetrik",
+      "Gaya" => "/service/kalibrasi-gaya",
+      "Kelembaban & Kelembapan" => "/service/kalibrasi-kelembaban",
+      "Dimensi" => "/service/kalibrasi-dimensi",
+      "Alat Ukur Listrik" => "/service/kalibrasi-kelistrikan",
+    ],
+  ];
+  @endphp
+
   <header>
     <div id="desktopMenu">
       <div class="top-menu">
@@ -23,7 +73,7 @@
         <div class="menu">
           <a href="#">Tentang Kami</a>
           <a href="#" id="search-menu"><i data-feather="search" width="16" height="16"></i> Cari</a>
-  
+
           <div id="searchInput">
             <input type="text" id="inputSearch" placeholder="Cari" />
             <i id="iconSearch" data-feather="search" width="16" height="16"></i>
@@ -35,53 +85,25 @@
       </div>
       <hr/>
       <div class="bot-menu">
-        <a href="#" data-list="pengurusanSNI"><p>Pengurusan SNI & TKDN</p> <div class="icon-selected-menu"><i data-feather="chevron-right" width="16" height="16"></i></div></a>
-        <a href="#" data-list="sertifikasi"><p>Sertifikasi</p> <div class="icon-selected-menu"><i data-feather="chevron-right" width="16" height="16"></i></div></a>
-        <a href="#" data-list="pelatihan"><p>Pelatihan</p> <div class="icon-selected-menu"><i data-feather="chevron-right" width="16" height="16"></i></div></a>
-        <a href="#" data-list="kalibrasi"><p>Kalibrasi</p> <div class="icon-selected-menu"><i data-feather="chevron-right" width="16" height="16"></i></div></a>
-        <a href="#">Konsultasi & Pembuatan Dokumen Mutu</i></a>
+        @foreach ($parent_menus as $menus => $data_list)
+          @if ($data_list)
+          <a href="#" class="parent-menu" data-list="{{ $data_list }}"><p>{{ $menus }}</p> <div class="icon-selected-menu"><i data-feather="chevron-right" width="16" height="16"></i></div></a>
+          @else
+          <a href="#">{{ $menus }}</a>
+          @endif
+        @endforeach
       </div>
-  
+
       <div id="menuList">
-        <div class="menu-items" id="menuList-sertifikasi">
-          <a href="/service/sertifikasi-9001-2015"><p>ISO 9001:2015</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>ISO 14001:2018</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>ISO 4500:2018</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="/service/sertifikasi-22000-2018"><p>ISO 22000:2018</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>HACCP</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>GMP</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>Sertifikasi Halal</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-        </div>
-        <div class="menu-items" id="menuList-pelatihan">
-          <a href="#"><p>ISO 9001:2015</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>ISO 14001:2018</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>ISO 4500:2018</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>ISO 22000</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>HACCP</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>GMP</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>Pelatihan Petugas Pengambil Contoh (PPC)</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>Pelatihan Pengujian Produk</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>Pelatihan Kalibrasi</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-        </div>
-        <div class="menu-items" id="menuList-kalibrasi">
-          <a href="/service/kalibrasi-massa"><p>Massa</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="/service/kalibrasi-suhu"><p>Suhu</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="/service/kalibrasi-volumetrik"><p>Volume</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="/service/kalibrasi-gaya"><p>Gaya</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="/service/kalibrasi-kelembaban"><p>Kelembaban & Kelembapan</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="/service/kalibrasi-dimensi"><p>Dimensi</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="/service/kalibrasi-kelistrikan"><p>Alat Ukur Listrik</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-        </div>
-        <div class="menu-items" id="menuList-pengurusanSNI">
-          <a href="#"><p>SNI Produk Ban</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>SNI Baja</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>SNI Helm</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>SNI Pupuk</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>SNI Toys</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>SNI Produk Elektronik</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>SNI Kompor</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-          <a href="#"><p>SNI Produk Makanan & Minuman</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
-        </div>
+        @foreach ($child_menus as $parent => $menus)
+          @if (key_exists($parent, $parent_menus))
+          <div class="menu-items" id="menuList-{{ $parent_menus[$parent] }}">
+            @foreach ($menus as $menu => $link)
+            <a href="{{ $link ?: '#' }}"><p>{{ $menu }}</p> <i data-feather="chevron-right" width="18" height="18"></i></a>
+            @endforeach
+          </div>
+          @endif
+        @endforeach
       </div>
     </div>
 
@@ -106,60 +128,20 @@
       </div>
 
       <div class="dropdown-menu" id="dropdownMenu">
+        @foreach ($parent_menus as $parent => $data_list)
         <div class="menu-list">
-          <a href="#" data-list="sertifikasi"><p>Sertifikasi</p> <div class="icon-selected-menu"><i data-feather="chevron-right" width="16" height="16"></i></div></a>
-          <div class="menu-items-mobile" id="menuListMobile-sertifikasi">
-            <a href="/service/sertifikasi-9001-2015"><p>ISO 9001:2015</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>ISO 14001:2018</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>ISO 4500:2018</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="/service/sertifikasi-22000-2018"><p>ISO 22000:2018</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>HACCP</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>GMP</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>Sertifikasi Halal</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
+          @if ($data_list)
+          <a href="#" class="parent-menu" data-list="{{ $data_list }}"><p>{{ $parent }}</p> <div class="icon-selected-menu"><i data-feather="chevron-right" width="16" height="16"></i></div></a>
+          <div class="menu-items-mobile" id="menuListMobile-{{ $data_list }}">
+            @foreach ($child_menus[$parent] as $menu => $link)
+            <a href="{{ $link ?: '#' }}">{{ $menu }}</a>
+            @endforeach
           </div>
+          @else
+          <a href="#">{{ $parent }}</a>
+          @endif
         </div>
-        <div class="menu-list">
-          <a href="#" data-list="pelatihan"><p>Pelatihan</p> <div class="icon-selected-menu"><i data-feather="chevron-right" width="16" height="16"></i></div></a>
-          <div class="menu-items-mobile" id="menuListMobile-pelatihan">
-            <a href="#"><p>ISO 9001:2015</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>ISO 14001:2018</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>ISO 4500:2018</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>ISO 22000</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>HACCP</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>GMP</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>Pelatihan Petugas Pengambil Contoh (PPC)</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>Pelatihan Pengujian Produk</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>Pelatihan Kalibrasi</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-          </div>
-        </div>
-        <div class="menu-list">
-          <a href="#" data-list="kalibrasi"><p>Kalibrasi</p> <div class="icon-selected-menu"><i data-feather="chevron-right" width="16" height="16"></i></div></a>
-          <div class="menu-items-mobile" id="menuListMobile-kalibrasi">
-            <a href="/service/kalibrasi-massa"><p>Massa</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="/service/kalibrasi-suhu"><p>Suhu</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="/service/kalibrasi-volumetrik"><p>Volume</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="/service/kalibrasi-gaya"><p>Gaya</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="/service/kalibrasi-kelembaban"><p>Kelembaban & Kelembapan</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="/service/kalibrasi-dimensi"><p>Dimensi</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="/service/kalibrasi-kelistrikan"><p>Alat Ukur Listrik</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-          </div>
-        </div>
-        <div class="menu-list">
-          <a href="#" data-list="pengurusanSNI"><p>Pengurusan SNI & TKDN</p> <div class="icon-selected-menu"><i data-feather="chevron-right" width="16" height="16"></i></div></a>
-          <div class="menu-items-mobile" id="menuListMobile-pengurusanSNI">
-            <a href="#"><p>SNI Produk Ban</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>SNI Baja</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>SNI Helm</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>SNI Pupuk</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>SNI Toys</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>SNI Produk Elektronik</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>SNI Kompor</p> <i data-feather="chevron-right" width="16" height="16"></i></a>
-            <a href="#"><p>SNI Produk Makanan & Minuman</p> <i data-feather="chevron-right" width="16" height="18"></i></a>
-          </div>
-        </div>
-        <div class="menu-list">
-          <a href="#">Konsultasi & Dokumen Mutu</i></a>
-        </div>
+        @endforeach
       </div>
     </div>
   </header>

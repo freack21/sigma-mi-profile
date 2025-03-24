@@ -21,8 +21,11 @@ class LandingPageController extends Controller
   public function service($slug)
   {
     $slugs = [
-      "sertifikasi-22000-2015" => ["Sertifikasi ISO 22000:2015", "landingpage.services.sertifikasi.22000-2015-service"],
+      "sertifikasi-22000-2018" => ["Sertifikasi ISO 22000:2018", "landingpage.services.sertifikasi.22000-2018-service"],
+      "sertifikasi-14001-2018" => ["Sertifikasi ISO 14001:2018", "landingpage.services.sertifikasi.14001-2018-service"],
+      "sertifikasi-45001-2018" => ["Sertifikasi ISO 45001:2018", "landingpage.services.sertifikasi.45001-2018-service"],
       "sertifikasi-9001-2015" => ["Sertifikasi ISO 9001:2015", "landingpage.services.sertifikasi.9001-2015-service"],
+      "sertifikasi-halal" => ["Sertifikasi Halal", "landingpage.services.sertifikasi.halal-service"],
       "kalibrasi" => ["Kalibrasi", "landingpage.pages.kalibrasi"],
       "kalibrasi-gaya" => ["Kalibrasi Gaya", "landingpage.services.kalibrasi.kalibrasi-gaya-service"],
       "kalibrasi-suhu" => ["Kalibrasi Suhu", "landingpage.services.kalibrasi.kalibrasi-suhu-service"],

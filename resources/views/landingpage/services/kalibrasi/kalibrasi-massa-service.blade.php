@@ -7,6 +7,9 @@
 @section('article_body')
   <p>Kalibrasi Massa adalah proses untuk memastikan bahwa alat ukur massa, seperti timbangan atau alat ukur berat lainnya, memberikan pembacaan yang akurat dan sesuai dengan standar yang telah ditetapkan. Proses ini sangat penting, terutama dalam industri yang memerlukan pengukuran yang sangat tepat seperti industri farmasi, pangan, dan manufaktur. Kalibrasi massa bertujuan untuk memastikan bahwa alat pengukur massa dapat memberikan hasil yang konsisten dan sesuai dengan nilai referensi atau standar yang telah ditentukan.</p>
 
+  <img src="{{ asset('img/gallery/kalibrasi-alat-timbangan-di-pt-sumber-sejahtera-mandiri-indonesia-1.jpg') }}" alt="Ilustrasi">
+  <p class="caption">Kalibrasi Alat Timbangan di PT. Sumber Sejahtera Mandiri Indonesia (1)</p>
+
   <h4>1. Apa itu Kalibrasi Massa?</h4>
   <p>Kalibrasi massa adalah kegiatan yang dilakukan untuk memverifikasi dan mengatur ulang alat ukur massa agar dapat menghasilkan pengukuran yang akurat dan sesuai dengan standar yang berlaku. Alat pengukur massa, seperti timbangan atau balance, digunakan untuk mengukur berat suatu objek atau bahan. Agar hasil pengukuran tetap konsisten dan sesuai dengan standar internasional, kalibrasi diperlukan untuk mengoreksi kesalahan yang mungkin terjadi pada alat tersebut.</p>
 
@@ -19,6 +22,9 @@
     <li><p><strong>Mengurangi Pemborosan</strong>: Pengukuran yang akurat menghindari pemborosan bahan baku yang berlebihan atau pengiriman produk dengan berat yang tidak tepat, yang dapat merugikan perusahaan.</p></li>
     <li><p><strong>Menjamin Kualitas Produk</strong>: Kalibrasi memastikan bahwa produk yang diproduksi memiliki berat yang sesuai dengan spesifikasi yang dibutuhkan, meningkatkan kualitas dan kepercayaan konsumen.</p></li>
   </ul>
+
+  <img src="{{ asset('img/gallery/kalibrasi-alat-timbangan-di-pt-sumber-sejahtera-mandiri-indonesia-2.jpg') }}" alt="Ilustrasi">
+  <p class="caption">Kalibrasi Alat Timbangan di PT. Sumber Sejahtera Mandiri Indonesia (2)</p>
 
   <h4>3. Proses Kalibrasi Massa</h4>
   <p>Proses kalibrasi massa melibatkan beberapa langkah untuk memastikan alat pengukur massa berfungsi dengan baik dan akurat. Berikut adalah langkah-langkah umumnya:</p>
@@ -58,6 +64,9 @@
     <li><p><strong>Peningkatan Kepercayaan Konsumen</strong>: Perusahaan yang melakukan kalibrasi secara rutin menunjukkan komitmen terhadap kualitas dan keakuratan, yang meningkatkan kepercayaan pelanggan terhadap produk mereka.</p></li>
     <li><p><strong>Efisiensi Operasional</strong>: Kalibrasi yang tepat mengurangi pemborosan bahan baku atau produk yang tidak memenuhi spesifikasi berat, sehingga meningkatkan efisiensi dan mengurangi biaya produksi.</p></li>
   </ul>
+
+  <img src="{{ asset('img/gallery/kalibrasi-alat-timbangan-di-pt-sumber-sejahtera-mandiri-indonesia-3.jpg') }}" alt="Ilustrasi">
+  <p class="caption">Kalibrasi Alat Timbangan di PT. Sumber Sejahtera Mandiri Indonesia (3)</p>
 
   <h4>7. Standar Kalibrasi Massa</h4>
   <p>Beberapa standar internasional yang digunakan dalam kalibrasi alat pengukur massa antara lain:</p>

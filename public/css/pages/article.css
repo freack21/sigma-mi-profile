@@ -196,6 +196,14 @@ ul {
   margin-left: 2rem;
 }
 
+p.caption {
+  color: #666;
+  width: 100%;
+  text-align: center;
+  margin-top: -0.5rem;
+  font-size: 0.85em;
+}
+
 @media (max-width: 480px) {
   .hero {
     padding: 2% 5%;
@@ -216,5 +224,9 @@ ul {
 
   .article-content .article-body p {
     font-size: 0.9em;
+  }
+
+  .article-content p.caption {
+    font-size: 0.8em;
   }
 }

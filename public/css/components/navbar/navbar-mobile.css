@@ -151,7 +151,7 @@ body.dropdown-active {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  gap: 0.25rem;
+  gap: 0.1rem;
   padding: 0;
   padding-bottom: 1rem;
   padding-left: 5%;
@@ -174,7 +174,7 @@ body.dropdown-active {
 @media (max-width: 480px) {
   header {
     padding: 0.5rem 5%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   }
 
   .logo img {

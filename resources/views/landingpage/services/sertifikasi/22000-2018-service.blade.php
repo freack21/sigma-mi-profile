@@ -7,7 +7,7 @@
 @section('article_body')
 
   <h2>
-    A. PROSES LAYANAN SERTIFIKASI ISO 22000:2018
+    A. TENTANG SERTIFIKASI ISO 22000:2018
   </h2>
   <p>
     ISO 22000:2018 adalah standar internasional yang menetapkan persyaratan untuk sistem manajemen keamanan pangan (Food Safety Management System/FSMS) di seluruh rantai pasokan pangan. Standar ini berlaku untuk semua organisasi yang terlibat dalam produksi, pengolahan, distribusi, dan penyediaan pangan, baik di sektor industri besar maupun kecil. ISO 22000:2018 membantu organisasi untuk memastikan bahwa produk pangan yang mereka hasilkan aman untuk dikonsumsi, serta memenuhi kebutuhan pelanggan dan persyaratan hukum yang berlaku.
@@ -114,16 +114,16 @@
   </p>
   <ul>
     <li><p>
-      F.SOP.20.1-Surat permohonan: <a href="/services/docs/22000-2018-Surat permohonan.doc" class="link">Unduh File (.doc)</a>
+      F.SOP.20.1-Surat permohonan: <a href="{{ asset('services/docs/Pengajuan tanggung gugat dan keuangan.doc') }}" class="link">Unduh File (.doc)</a>
     </p></li>
     <li><p>
-      F.SOP.20.2-Surat Pernyataan Kesesuaian: <a href="/services/docs/22000-2018-Surat Pernyataan Kesesuaian.doc" class="link">Unduh File (.doc)</a>
+      F.SOP.20.2-Surat Pernyataan Kesesuaian: <a href="{{ asset('services/docs/Pengajuan tanggung gugat dan keuangan.doc') }}" class="link">Unduh File (.doc)</a>
     </p></li>
     <li><p>
-      F.SOP.20.3-Data dan Kajian Permohonan: <a href="/services/docs/22000-2018-Data dan Kajian Permohonan.doc" class="link">Unduh File (.doc)</a>
+      F.SOP.20.3-Data dan Kajian Permohonan: <a href="{{ asset('services/docs/Pengajuan tanggung gugat dan keuangan.doc') }}" class="link">Unduh File (.doc)</a>
     </p></li>
     <li><p>
-      IK.SOP.20.4-Otorisasi Lisensi penggunaan Logo: <a href="/services/docs/22000-2018-Otorisasi Lisensi penggunaan Logo.docx" class="link">Unduh File (.doc)</a>
+      IK.SOP.20.4-Otorisasi Lisensi penggunaan Logo: <a href="{{ asset('services/docs/Pengajuan tanggung gugat dan keuangan.doc') }}" class="link">Unduh File (.doc)</a>
     </p></li>
   </ul>
 
@@ -194,10 +194,10 @@
   </p>
   <ul>
     <li><p>
-      F.SOP.24.1-Surat Pengaduan Pelanggan: <a href="/services/docs/Surat Pengaduan Pelanggan.docx" class="link">Unduh File (.doc)</a>
+      F.SOP.24.1-Surat Pengaduan Pelanggan: <a href="{{ asset('services/docs/Pengajuan tanggung gugat dan keuangan.doc') }}" class="link">Unduh File (.doc)</a>
     </p></li>
     <li><p>
-      F.SOP 27-2-Pengajuan tanggung gugat dan keuangan: <a href="/services/docs/Pengajuan tanggung gugat dan keuangan.doc" class="link">Unduh File (.doc)</a>
+      F.SOP 27-2-Pengajuan tanggung gugat dan keuangan: <a href="{{ asset('services/docs/Pengajuan tanggung gugat dan keuangan.doc') }}" class="link">Unduh File (.doc)</a>
     </p></li>
   </ul>
 

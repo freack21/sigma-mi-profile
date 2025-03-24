@@ -7,7 +7,7 @@
 @section('article_body')
 
   <h2>
-    A.	TENTANG SERTIFIKASI ISO 9001:2015
+    A. TENTANG SERTIFIKASI ISO 9001:2015
   </h2>
   <p>
     ISO 9001:2015 adalah standar internasional yang menetapkan persyaratan untuk sistem manajemen mutu (SMM) di suatu organisasi. Standar ini dirancang untuk membantu organisasi dalam memastikan bahwa produk dan layanan yang diberikan dapat memenuhi kebutuhan pelanggan serta peraturan yang berlaku. ISO 9001:2015 adalah versi terbaru dari ISO 9001, yang sebelumnya diterbitkan pada tahun 2008, dan membawa sejumlah pembaruan penting.
@@ -92,27 +92,27 @@
   </h2>
 
   <p>
-    1.	Saat ini Lembaga Sistem Manajemen Mutu (LS-SMM Sigma-Mi) memiliki layanan sertifikasi ISO 9001;2015 untuk bidang karet dan barang plastik dan produk turunanya dan bidang jasa perakitan pompa, jasa pengerasan part otomotif. Saat ini, ruang lingkup karet dan plastik serta turunya sedang dalam proses sertifikasi KAN, dan dalam waktu dekat ini sudah mendaptkan akreditasi
+    1. Saat ini Lembaga Sistem Manajemen Mutu (LS-SMM Sigma-Mi) memiliki layanan sertifikasi ISO 9001;2015 untuk bidang karet dan barang plastik dan produk turunanya dan bidang jasa perakitan pompa, jasa pengerasan part otomotif. Saat ini, ruang lingkup karet dan plastik serta turunya sedang dalam proses sertifikasi KAN, dan dalam waktu dekat ini sudah mendaptkan akreditasi
   </p>
 
   <h4>
-    2.	PERMOHONAN UNTUK LAYANAN SERTIFIKASI
+    2. PERMOHONAN UNTUK LAYANAN SERTIFIKASI
   </h4>
   <p>
     Setiap pelanggan yang ingin mendapatkan layanan sertifikasi Sistem Manajemen Mutu ISO 9001:2015 kepada Lembaga Sertifikasi Sistem Manajemen Mutu Sigma Mutu Indonesia (LS-SMM Sigma-MI), dapat mengajukan dengan melakukan pengisian formulir berikut dibawah ini:
   </p>
   <ul>
     <li><p>
-      F.SOP.20.1-Surat permohonan: <a href="/services/docs/22000-2018-Surat permohonan.doc" class="link">Unduh File (.doc)</a>
+      F.SOP.20.1-Surat permohonan: <a href="{{ asset('services/docs/Pengajuan tanggung gugat dan keuangan.doc') }}" class="link">Unduh File (.doc)</a>
     </p></li>
     <li><p>
-      F.SOP.20.2-Surat Pernyataan Kesesuaian: <a href="/services/docs/22000-2018-Surat Pernyataan Kesesuaian.doc" class="link">Unduh File (.doc)</a>
+      F.SOP.20.2-Surat Pernyataan Kesesuaian: <a href="{{ asset('services/docs/Pengajuan tanggung gugat dan keuangan.doc') }}" class="link">Unduh File (.doc)</a>
     </p></li>
     <li><p>
-      F.SOP.20.3-Data dan Kajian Permohonan: <a href="/services/docs/22000-2018-Data dan Kajian Permohonan.doc" class="link">Unduh File (.doc)</a>
+      F.SOP.20.3-Data dan Kajian Permohonan: <a href="{{ asset('services/docs/Pengajuan tanggung gugat dan keuangan.doc') }}" class="link">Unduh File (.doc)</a>
     </p></li>
     <li><p>
-      IK.SOP.20.4-Otorisasi Lisensi penggunaan Logo: <a href="/services/docs/22000-2018-Otorisasi Lisensi penggunaan Logo.docx" class="link">Unduh File (.doc)</a>
+      IK.SOP.20.4-Otorisasi Lisensi penggunaan Logo: <a href="{{ asset('services/docs/Pengajuan tanggung gugat dan keuangan.doc') }}" class="link">Unduh File (.doc)</a>
     </p></li>
   </ul>
 
@@ -183,10 +183,10 @@
   </p>
   <ul>
     <li><p>
-      F.SOP.24.1-Surat Pengaduan Pelanggan: <a href="/services/docs/Surat Pengaduan Pelanggan.docx" class="link">Unduh File (.doc)</a>
+      F.SOP.24.1-Surat Pengaduan Pelanggan: <a href="{{ asset('services/docs/Pengajuan tanggung gugat dan keuangan.doc') }}" class="link">Unduh File (.doc)</a>
     </p></li>
     <li><p>
-      F.SOP 27-2-Pengajuan tanggung gugat dan keuangan: <a href="/services/docs/Pengajuan tanggung gugat dan keuangan.doc" class="link">Unduh File (.doc)</a>
+      F.SOP 27-2-Pengajuan tanggung gugat dan keuangan: <a href="{{ asset('services/docs/Pengajuan tanggung gugat dan keuangan.doc') }}" class="link">Unduh File (.doc)</a>
     </p></li>
   </ul>
 
