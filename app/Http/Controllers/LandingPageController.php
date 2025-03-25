@@ -8,14 +8,49 @@ class LandingPageController extends Controller
 {
   public function home()
   {
+    $articles = [
+      [
+        "title" => "Pelatihan PPC Pupuk di Dinas Pertanian dan Perkebunan Makassar",
+        "link" => "/article/pelatihan-ppc-pupuk-di-dinas-pertanian-dan-perkebunan-makassar",
+        "image" => asset('img/gallery/IMG-20250324-WA0018.jpg'),
+        "created_at" => "0001-01-01",
+      ],
+    ];
+
     $title = "Beranda | PT. Sigma Mutu Indonesia";
-    return view('landingpage.pages.home', compact('title'));
+    return view('landingpage.pages.home', compact('title', 'articles'));
   }
 
-  public function article()
+  public function tentang()
   {
-    $title = "Artikel | PT. Sigma Mutu Indonesia";
-    return view('landingpage.pages.article', compact('title'));
+    $title = "Tentang Kami | PT. Sigma Mutu Indonesia";
+    return view('landingpage.pages.tentang-kami', compact('title'));
+  }
+
+  public function article($slug)
+  {
+    $articles = [
+      "pelatihan-ppc-pupuk-di-dinas-pertanian-dan-perkebunan-makassar" => [
+        "title" => "Pelatihan PPC Pupuk di Dinas Pertanian dan Perkebunan Makassar",
+        "link" => "/article/pelatihan-ppc-pupuk-di-dinas-pertanian-dan-perkebunan-makassar",
+        "view" => "landingpage.articles.pelatihan-ppc-pupuk-di-dinas-pertanian-dan-perkebunan-makassar-article",
+        "image" => asset('img/gallery/IMG-20250324-WA0018.jpg'),
+        "created_at" => "0001-01-01",
+      ],
+    ];
+
+    $data = $articles[$slug] ?? [
+      "title" => "Artikel",
+      "link" => "/article",
+      "view" => "landingpage.pages.article",
+      "image" => "",
+    ];
+    $title = $data['title'] . " | PT. Sigma Mutu Indonesia";
+
+    $other_articles = array_values(array_filter($articles, fn($key) => $key !== $slug, ARRAY_FILTER_USE_KEY));
+    $other_articles = array_slice($other_articles, 0, 3);
+
+    return view($data['view'], compact('title', 'data', 'other_articles'));
   }
 
   public function service($slug)

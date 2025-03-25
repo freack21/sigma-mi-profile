@@ -5,8 +5,8 @@
   <section class="hero">
     <div class="hero-content">
       <h1>Selamat Datang di <br> PT. Sigma Mutu Indonesia</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt nulla unde dolor vitae nisi aliquid!</p>
-      <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+      <p>Konsultasi di bidang ketenagakerjaan dan outsourcing, serta penerapan sistem manajemen mutu berbasis standar ISO 9001.</p>
+      <a href="/tentang" class="btn">Pelajari Lebih Lanjut</a>
     </div>
   </section>
 
@@ -14,7 +14,7 @@
   $services = [
     "Sertifikasi" => [
       "icon" => "file-text",
-      "desc" => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis harum deserunt pariatur autem qui quisquam.",
+      "desc" => "Melakukan sertifikasi ISO 22000:2018, ISO 14001:2018, ISO 45001:2018, ISO 9001:2015, dan Sertifikasi Halal untuk organisasi anda.",
       "href" => null,
     ],
     "Kalibrasi" => [
@@ -22,21 +22,21 @@
       "desc" => "Kalibrasi adalah proses untuk memastikan bahwa instrumen atau alat ukur berfungsi dengan benar dan memberikan hasil yang akurat sesuai dengan standar yang telah ditentukan.",
       "href" => "/service/kalibrasi",
     ],
-    "Pelatihan" => [
-      "icon" => "briefcase",
-      "desc" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est pariatur at expedita rerum officiis voluptate?",
-      "href" => null,
-    ],
-    "Konsultasi" => [
-      "icon" => "check-circle",
-      "desc" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est pariatur at expedita rerum officiis voluptate?",
-      "href" => null,
-    ],
-    "Pengurusan SNI & TKDN" => [
-      "icon" => "shield",
-      "desc" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est pariatur at expedita rerum officiis voluptate?",
-      "href" => null,
-    ],
+    // "Pelatihan" => [
+    //   "icon" => "briefcase",
+    //   "desc" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est pariatur at expedita rerum officiis voluptate?",
+    //   "href" => null,
+    // ],
+    // "Konsultasi" => [
+    //   "icon" => "check-circle",
+    //   "desc" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est pariatur at expedita rerum officiis voluptate?",
+    //   "href" => null,
+    // ],
+    // "Pengurusan SNI & TKDN" => [
+    //   "icon" => "shield",
+    //   "desc" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est pariatur at expedita rerum officiis voluptate?",
+    //   "href" => null,
+    // ],
   ];
   @endphp
 
@@ -47,7 +47,7 @@
           <div class="highlight">
             <h1>Jelajahi Layanan dan Jasa PT Sigma Mutu Indonesia</h1>
             <div class="line-light"></div>
-            <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+            <a href="/tentang" class="btn">Pelajari Lebih Lanjut</a>
           </div>
         </div>
         @foreach ($services as $service => $data)

@@ -7,70 +7,111 @@
     <a href="#" class="link">Lihat Semua Artikel &rightarrow;</a>
   </div>
 
+  @php
+  $headnews = isset($articles[0]) ? $articles[0] : [];
+  $secondnews = isset($articles[1]) ? $articles[1] : [];
+  $thirdnews = isset($articles[2]) ? $articles[2] : [];
+  @endphp
   <div id="article-desktop">
     <div class="row">
-      <div class="col-6">
-        <a href="/article" id="headnews" data-bg='url("https://images.unsplash.com/photo-1503694978374-8a2fa686963a?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'>
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorum?</h3>
-          <p>21 April 20XX</p>
+
+      @if (isset($headnews['title']))
+      <div class="col-{{ isset($secondnews['title']) ? '6' : '12' }}">
+        <a href="{{ $headnews['link'] ?: '#' }}" id="headnews" data-bg="{{ $headnews['image'] ?: 'https://fakeimg.pl/200x200?text=article' }}">
+          <h3>{{ $headnews['title'] ?: 'Artikel Tidak Tersedia' }}</h3>
+          <p>{{ \Carbon\Carbon::parse($headnews['created_at'] ?: '0001-01-01')->translatedFormat('d F Y') }}</p>
         </a>
       </div>
+      @else
+      <div class="col-12">
+        <a href="#" id="headnews" data-bg="">
+          <h3>Artikel Tidak Tersedia</h3>
+          <p>{{ \Carbon\Carbon::parse('0001-01-01')->translatedFormat('d F Y') }}</p>
+        </a>
+      </div>
+      @endif
+
+      @if (isset($secondnews['title']))
       <div class="col-6">
-        <div id="otherNews">
-          <a href="/article" id="secondNews" class="other-news">
+        <div id="othernews">
+          <a href="{{ $secondnews['link'] ?: '' }}" id="secondnews" class="other-news" style="flex: 0 0 {{ isset($thirdnews['title']) ? '50%' : '100%' }}">
             <div class="img">
-              <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="News Image">
+              <img src="{{ $secondnews['image'] ?: (isset($thirdnews['title']) ? 'https://fakeimg.pl/200x150?text=article' : 'https://fakeimg.pl/400x150?text=article') }}" alt="News Image">
             </div>
             <div class="content">
-              <span>21 April 20XX</span>
-              <h4 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, animi.</h4>
+              <span>{{ \Carbon\Carbon::parse($secondnews['created_at'] ?: '0001-01-01')->translatedFormat('d F Y') }}</span>
+              <h4 class="title">{{ $secondnews['title'] ?: 'Artikel Tidak Tersedia' }}</h4>
             </div>
           </a>
-          <a href="/article" id="thirdNews" class="other-news">
-            <span>21 April 20XX</span>
-            <h3 class="title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim repudiandae tempore id. Cumque deleniti quis facilis sequi ducimus nostrum placeat aliquid quidem recusandae distinctio! Fugiat facere veritatis alias officiis debitis.</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod vitae dolore culpa fugit! Autem sapiente facere dolorem quibusdam dolorum.</p>
+
+          @if (isset($thirdnews['title']))
+          <a href="{{ $thirdnews['link'] ?: '' }}" id="thirdnews" class="other-news">
+            <span>{{ \Carbon\Carbon::parse($thirdnews['created_at'] ?: '0001-01-01')->translatedFormat('d F Y') }}</span>
+            <h3 class="title">{{ $thirdnews['title'] ?: 'Artikel Tidak Tersedia' }}</h3>
           </a>
+          @endif
+
         </div>
       </div>
+      @endif
+
     </div>
   </div>
 
   <div id="article-mobile">
+
+    @if (isset($headnews['title']))
     <div class="other-news">
       <div class="img">
-        <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="News Image">
+        <img src="{{ $headnews['image'] ?: 'https://fakeimg.pl/200x200?text=article' }}" alt="News Image">
       </div>
       <div class="content">
-        <span>21 April 20XX</span>
-        <h4 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, animi.</h4>
+        <span>{{ \Carbon\Carbon::parse($headnews['created_at'] ?: '0001-01-01')->translatedFormat('d F Y') }}</span>
+        <h4 class="title">{{ $headnews['title'] ?: 'Artikel Tidak Tersedia' }}</h4>
       </div>
     </div>
+    @else
     <div class="other-news">
       <div class="img">
-        <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="News Image">
+        <img src="https://fakeimg.pl/200x200?text=article" alt="News Image">
       </div>
       <div class="content">
-        <span>21 April 20XX</span>
-        <h4 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, animi.</h4>
+        <span>{{ \Carbon\Carbon::parse('0001-01-01')->translatedFormat('d F Y') }}</span>
+        <h4 class="title">Artikel Tidak Tersedia</h4>
       </div>
     </div>
+    @endif
+
+    @if (isset($secondnews['title']))
     <div class="other-news">
       <div class="img">
-        <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="News Image">
+        <img src="{{ $secondnews['image'] ?: 'https://fakeimg.pl/200x150?text=article' }}" alt="News Image">
       </div>
       <div class="content">
-        <span>21 April 20XX</span>
-        <h4 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+        <span>{{ \Carbon\Carbon::parse($secondnews['created_at'] ?: '0001-01-01')->translatedFormat('d F Y') }}</span>
+        <h4 class="title">{{ $secondnews['title'] ?: 'Artikel Tidak Tersedia' }}</h4>
       </div>
     </div>
+    @endif
+
+    @if (isset($thirdnews['title']))
+    <div class="other-news">
+      <div class="img">
+        <img src="{{ $thirdnews['image'] ?: 'https://fakeimg.pl/200x150?text=article' }}" alt="News Image">
+      </div>
+      <div class="content">
+        <span>{{ \Carbon\Carbon::parse($thirdnews['created_at'] ?: '0001-01-01')->translatedFormat('d F Y') }}</span>
+        <h4 class="title">{{ $thirdnews['title'] ?: 'Artikel Tidak Tersedia' }}</h4>
+      </div>
+    </div>
+    @endif
+
   </div>
 </div>
 
 <script>
 const headnews = document.querySelectorAll("#headnews").forEach(item => {
   const bgImage = item.dataset.bg;
-  item.style.setProperty('--headnews-img', `url(${bgImage})`);
-  item.style.background = `linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(${bgImage})`;
+  bgImage && item.style.setProperty('--headnews-img', `url('${bgImage}')`);
 });
 </script>

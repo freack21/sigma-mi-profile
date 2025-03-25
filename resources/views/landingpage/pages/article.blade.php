@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="{{ asset('css/pages/article.css') }}">
 <main>
-  <section class="hero">
+  <section class="hero" data-bg="{{ isset($data) ? $data['image'] : '' }}">
     <div class="hero-content">
       <h1>@yield('article_title', 'Judul Artikel')</h1>
     </div>
@@ -11,48 +11,42 @@
 
   <section class="article-content">
     <div class="row">
-      <div class="col-12 col-md-8">
+      <div class="col-12 col-md-{{ isset($other_articles[0]) ? '8' : '12' }}">
         <div class="article-body">
           @yield('article_body', 'Ini adalah contoh artikel!')
         </div>
       </div>
+
+      @if (isset($other_articles[0]))
       <div class="col-12 col-md-3">
         <h1 class="other-title">
           Artikel Lainnya
         </h1>
+
+        @foreach ($other_articles as $other_article)
         <div class="other-card">
           <div class="img">
-            <img src="https://images.unsplash.com/photo-1503694978374-8a2fa686963a?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img src="{{ $other_article['image'] ?: 'https://fakeimg.pl/100x100?text=article' }}" alt="">
           </div>
           <div class="body">
-            <span>21 April 20XX</span>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, expedita. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aut?</p>
-            <a href="#" class="link">Selengkapnya &rightarrow;</a>
+            <span>{{ \Carbon\Carbon::parse($other_article['created_at'] ?: '0001-01-01')->translatedFormat('d F Y') }}</span>
+            <p>{{ $other_article['title'] ?: 'Artikel Tidak Tersedia' }}</p>
+            <a href="{{ $other_article['link'] ?: '' }}" class="link">Selengkapnya &rightarrow;</a>
           </div>
         </div>
-        <div class="other-card">
-          <div class="img">
-            <img src="https://images.unsplash.com/photo-1503694978374-8a2fa686963a?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          </div>
-          <div class="body">
-            <span>21 April 20XX</span>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, expedita. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aut?</p>
-            <a href="#" class="link">Selengkapnya &rightarrow;</a>
-          </div>
-        </div>
-        <div class="other-card">
-          <div class="img">
-            <img src="https://images.unsplash.com/photo-1503694978374-8a2fa686963a?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          </div>
-          <div class="body">
-            <span>21 April 20XX</span>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, expedita. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aut?</p>
-            <a href="#" class="link">Selengkapnya &rightarrow;</a>
-          </div>
-        </div>
+        @endforeach
       </div>
+      @endif
+
     </div>
   </section>
 </main>
+
+<script>
+  const hero = document.querySelectorAll(".hero").forEach(item => {
+    const bgImage = item.dataset.bg;
+    bgImage && item.style.setProperty('--hero-img', `url('${bgImage}')`);
+  });
+</script>
 
 @include('landingpage.layouts.footer')

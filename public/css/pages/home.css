@@ -23,9 +23,9 @@
   color: #fff;
   background: linear-gradient(
     to right,
-    rgba(var(--secondary-color-rgb), 0.9),
+    rgba(var(--secondary-color-rgb), 0.7),
     rgba(var(--secondary-color-rgb), 0.6),
-    rgba(var(--secondary-color-rgb), 0.3)
+    rgba(var(--secondary-color-rgb), 0.5)
   );
   padding: 2rem;
   width: 45%;
@@ -135,6 +135,10 @@
   }
 
   .hero-content p {
+    font-size: 0.9em;
+  }
+
+  .service p {
     font-size: 0.9em;
   }
 }

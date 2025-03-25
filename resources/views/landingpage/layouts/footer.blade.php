@@ -5,20 +5,21 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6">
-        <div class="footer-contact mt-sm-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.894147360286!2d106.7252576!3d-6.1449177!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f8020213795b%3A0x8d2786badae4ff20!2sJl.%20Cendrawasih%20Raya%20No.219b%2C%20RT.6%2FRW.6%2C%20Cengkareng%20Bar.%2C%20Kecamatan%20Cengkareng%2C%20Kota%20Jakarta%20Barat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2011730!5e0!3m2!1sid!2sid!4v1742892518942!5m2!1sid!2sid" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" height="200"></iframe>
+        <div class="footer-contact mt-4">
           <h3>MAIN OFFICE</h3>
           <p>Jl. Cendrawasih Raya No. 219 b, Rt.7/Rw.6,</p>
           <p>Cengkaraeng, Jakarta Barat 11730</p>
         </div>
-        <div class="footer-contact mt-4">
+      </div>
+      <div class="col-12 col-md-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7933.739902369326!2d106.8958324!3d-6.1481629!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f55e04c70ed7%3A0xc509facb62526f95!2sPT%20CEKA%20ARSITEKTUR%20INTERIOR!5e0!3m2!1sid!2sid!4v1742892584080!5m2!1sid!2sid" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" height="200"></iframe>
+        <div class="footer-contact mt-4 right">
           <h3>LABORATORIUM & SERTIFIKASI</h3>
           <p>Ceka Office, Mitra Gading Villa</p>
           <p>Jl. Kelapa Hibrida, Blok G1, No.03, Kelapa Gading</p>
           <p>Jakarta Utara 12420</p>
         </div>
-      </div>
-      <div class="col-12 col-md-6">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.073013073073!2d112.7573663147737!3d-7.303000994733073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9b1b1b1b1b1%3A0x2b7b1b1b1b1b1b1!2sPT%20Sigma%20Mutu%20Indonesia!5e0!3m2!1sen!2sid!4v1618223660001!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
     <div class="socials">

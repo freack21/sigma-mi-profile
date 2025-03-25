@@ -71,7 +71,7 @@ a {
 }
 
 .right {
-  text-align: right;
+  text-align: right !important;
 }
 
 .mt-2 {
@@ -106,7 +106,7 @@ footer .container {
 }
 
 footer iframe {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 footer hr {
@@ -161,6 +161,11 @@ footer .bottom-footer {
   color: var(--fifth-color);
 }
 
+.alamat-labor,
+.alamat-labor p {
+  text-align: right !important;
+}
+
 @media (max-width: 576px) {
   .btn {
     font-size: 0.85em;
@@ -199,5 +204,10 @@ footer .bottom-footer {
 
   .social-media {
     font-size: 1em;
+  }
+
+  .alamat-labor,
+  .alamat-labor p {
+    text-align: left !important;
   }
 }

@@ -71,7 +71,7 @@
           <img src="{{ asset('img/sigma-tag.png') }}" alt="Sigma Tagline" class="tag">
         </a>
         <div class="menu">
-          <a href="#">Tentang Kami</a>
+          <a href="/tentang">Tentang Kami</a>
           <a href="#" id="search-menu"><i data-feather="search" width="16" height="16"></i> Cari</a>
 
           <div id="searchInput">

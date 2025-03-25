@@ -19,7 +19,8 @@ Route::get('/', [LandingPageController::class, 'home']);
 
 Route::get('/service/{slug}', [LandingPageController::class, 'service']);
 
-Route::get('/article', [LandingPageController::class, 'article']);
+Route::get('/article/{slug}', [LandingPageController::class, 'article']);
+Route::get('/tentang', [LandingPageController::class, 'tentang']);
 
 Route::controller(AdminController::class)->prefix("admin")->group(function () {
   Route::get('/', 'home');
