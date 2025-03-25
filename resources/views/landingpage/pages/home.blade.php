@@ -10,6 +10,36 @@
     </div>
   </section>
 
+  @php
+  $services = [
+    "Sertifikasi" => [
+      "icon" => "file-text",
+      "desc" => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis harum deserunt pariatur autem qui quisquam.",
+      "href" => null,
+    ],
+    "Kalibrasi" => [
+      "icon" => "activity",
+      "desc" => "Kalibrasi adalah proses untuk memastikan bahwa instrumen atau alat ukur berfungsi dengan benar dan memberikan hasil yang akurat sesuai dengan standar yang telah ditentukan.",
+      "href" => "/service/kalibrasi",
+    ],
+    "Pelatihan" => [
+      "icon" => "briefcase",
+      "desc" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est pariatur at expedita rerum officiis voluptate?",
+      "href" => null,
+    ],
+    "Konsultasi" => [
+      "icon" => "check-circle",
+      "desc" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est pariatur at expedita rerum officiis voluptate?",
+      "href" => null,
+    ],
+    "Pengurusan SNI & TKDN" => [
+      "icon" => "shield",
+      "desc" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est pariatur at expedita rerum officiis voluptate?",
+      "href" => null,
+    ],
+  ];
+  @endphp
+
   <section class="services">
     <div class="container">
       <div class="row">
@@ -20,48 +50,16 @@
             <a href="#" class="btn">Pelajari Lebih Lanjut</a>
           </div>
         </div>
+        @foreach ($services as $service => $data)
         <div class="col-12 col-md-6 col-lg-4">
           <div class="service">
-            <i data-feather="file-text" width="48" height="48"></i>
-            <h2>Sertifikasi</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis harum deserunt pariatur autem qui quisquam.</p>
-            <a href="#" class="link">Pelajari Lebih Lanjut &rightarrow;</i></a>
+            <i data-feather="{{ $data['icon'] }}" width="48" height="48"></i>
+            <h2>{{ $service }}</h2>
+            <p>{{ $data['desc'] }}</p>
+            <a href="{{ $data['href'] ?: '#' }}" class="link">Pelajari Lebih Lanjut &rightarrow;</i></a>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="service">
-            <i data-feather="briefcase" width="48" height="48"></i>
-            <h2>Pelatihan</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est pariatur at expedita rerum officiis voluptate?</p>
-            <a href="#" class="link">Pelajari Lebih Lanjut &rightarrow;</i></a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="service">
-            <i data-feather="activity" width="48" height="48"></i>
-            <h2>Kalibrasi</h2>
-            <p>Kalibrasi adalah proses untuk memastikan bahwa instrumen atau alat ukur berfungsi dengan benar dan memberikan hasil yang akurat sesuai dengan standar yang telah ditentukan.</p>
-            <a href="/service/kalibrasi" class="link">Pelajari Lebih Lanjut &rightarrow;</i></a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="service">
-            <i data-feather="check-circle" width="48" height="48"></i>
-            <h2>Konsultasi</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est pariatur at expedita rerum officiis voluptate?</p>
-            <a href="#" class="link">Pelajari Lebih Lanjut &rightarrow;</i></a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="service">
-            <i data-feather="shield" width="48" height="48"></i>
-            <h2>Pengurusan SNI & TKDN</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est pariatur at expedita rerum officiis voluptate?</p>
-            <a href="#" class="link">Pelajari Lebih Lanjut &rightarrow;</i></a>
-          </div>
-        </div>
+        @endforeach
       </div>
     </div>
   </section>

@@ -68,7 +68,7 @@
 </div>
 
 <script>
-const headnews = document.querySelector("#headnews").forEach(item => {
+const headnews = document.querySelectorAll("#headnews").forEach(item => {
   const bgImage = item.dataset.bg;
   item.style.setProperty('--headnews-img', `url(${bgImage})`);
   item.style.background = `linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(${bgImage})`;

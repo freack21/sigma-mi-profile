@@ -102,6 +102,8 @@
   </p>
 
 
+  <hr>
+
   <h2>
     B. PROSES LAYANAN SERTIFIKASI ISO 45001:2018
   </h2>
@@ -183,6 +185,8 @@
     Pengiriman sertifikat kepada pelangan
   </p>
 
+  <hr>
+
   <h2>
     C. PROSEDUR BANDING atau KELUHAN
   </h2>
@@ -201,12 +205,16 @@
     </p></li>
   </ul>
 
+  <hr>
+
   <h2>
     D. PENGKAJIAN GUGATAN
   </h2>
   <p>
     Manajemen LS-SMKP Sigma-Mi melakukan pengkajian terhadap keluahan dan pengugatan atas ketidakmampuan layanan yang dilakukan oleh LS-SMKP Sigma-Mi
   </p>
+
+  <hr>
 
   <h2>
     E. PENGANTIAN

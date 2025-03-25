@@ -15,11 +15,11 @@
 <body>
   @php
   $parent_menus = [
-    "Pengurusan SNI & TKDN" => "pengurusanSNI",
+    // "Pengurusan SNI & TKDN" => "pengurusanSNI",
     "Sertifikasi" => "sertifikasi",
-    "Pelatihan" => "pelatihan",
+    // "Pelatihan" => "pelatihan",
     "Kalibrasi" => "kalibrasi",
-    "Konsultasi & Pembuatan Dokumen Mutu" => null,
+    // "Konsultasi & Pembuatan Dokumen Mutu" => null,
   ];
 
   $child_menus = [

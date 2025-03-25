@@ -149,4 +149,8 @@
   <p>
     Bagi pelanggan yang ingin mendapatkan pelayanan sertifikasi halal, dapt melakukan pengisian pendaftaran formulir sertifikasi halal, dengan formulir dibawah ini: <a href="{{ asset('services/docs/Form Pendaftaran Halal.docx') }}">Unduh file (.doc)</a>
   </p>
+
+  <p style="border-left: solid .25rem var(--secondary-color); padding-left: .5rem;"><strong>
+    Berikut Contoh Sertifikat Halal &rightarrow; <a class="link" target="_blank" href="{{ asset('services/docs/SERTIFIKAT HALAL COFFE 4.0.pdf') }}">download</a>
+  </strong></p>
 @endsection

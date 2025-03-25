@@ -204,6 +204,12 @@ p.caption {
   font-size: 0.85em;
 }
 
+img {
+  max-width: 75%;
+  margin: auto;
+  border-radius: 0.5rem;
+}
+
 @media (max-width: 480px) {
   .hero {
     padding: 2% 5%;
@@ -228,5 +234,9 @@ p.caption {
 
   .article-content p.caption {
     font-size: 0.8em;
+  }
+
+  img {
+    max-width: 100%;
   }
 }

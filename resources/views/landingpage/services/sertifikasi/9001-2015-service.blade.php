@@ -13,6 +13,9 @@
     ISO 9001:2015 adalah standar internasional yang menetapkan persyaratan untuk sistem manajemen mutu (SMM) di suatu organisasi. Standar ini dirancang untuk membantu organisasi dalam memastikan bahwa produk dan layanan yang diberikan dapat memenuhi kebutuhan pelanggan serta peraturan yang berlaku. ISO 9001:2015 adalah versi terbaru dari ISO 9001, yang sebelumnya diterbitkan pada tahun 2008, dan membawa sejumlah pembaruan penting.
   </p>
 
+  <img src="{{ asset('img/gallery/sertifikasi-iso-9001-2015-di-pt-asa-kreasi-global-1.jpg') }}" alt="Ilustrasi">
+  <p class="caption">Sertifikasi ISO 9001:2015 di PT. Asa Kreasi Global (1)</p>
+
   <h4>
     1. Fokus pada Kepuasan Pelanggan
   </h4>
@@ -40,6 +43,9 @@
   <p>
     Salah satu pembaruan penting dalam ISO 9001:2015 adalah pendekatan berbasis risiko. Organisasi diwajibkan untuk mengidentifikasi dan mengelola risiko yang dapat memengaruhi pencapaian tujuan mutu dan kesuksesan organisasi. Pendekatan ini membantu organisasi untuk lebih proaktif dalam mencegah masalah, bukan hanya bereaksi terhadapnya setelah terjadi.
   </p>
+
+  <img src="{{ asset('img/gallery/sertifikasi-iso-9001-2015-di-pt-asa-kreasi-global-2.jpg') }}" alt="Ilustrasi">
+  <p class="caption">Sertifikasi ISO 9001:2015 di PT. Asa Kreasi Global (2)</p>
 
   <h4>
     5. Pemikiran Berbasis Nilai Tambah
@@ -69,6 +75,9 @@
     ISO 9001:2015 lebih fleksibel dalam hal dokumentasi dibandingkan dengan versi sebelumnya. Organisasi dapat menyederhanakan sistem dokumentasi mereka untuk mencerminkan kebutuhan dan ukuran organisasi mereka, dengan tetap memenuhi persyaratan standar ini.
   </p>
 
+  <img src="{{ asset('img/gallery/sertifikasi-iso-9001-2015-di-pt-asa-kreasi-global-4.jpg') }}" alt="Ilustrasi">
+  <p class="caption">Sertifikasi ISO 9001:2015 di PT. Asa Kreasi Global (4)</p>
+
   <h4>
     9. Audit Internal dan Evaluasi Kinerja
   </h4>
@@ -86,6 +95,11 @@
     Dengan mengikuti ISO 9001:2015, organisasi dapat menciptakan lingkungan yang mendukung perbaikan berkelanjutan dan memastikan bahwa mereka dapat memenuhi kebutuhan pelanggan dengan cara yang konsisten dan dapat diandalkan.
   </p>
 
+  <p style="border-left: solid .25rem var(--secondary-color); padding-left: .5rem;"><strong>
+    Berikut Contoh Sertifikat ISO 9001:2015 &rightarrow; <a class="link" target="_blank" href="{{ asset('services/docs/Sertifikat_ISO 9001-2015 .pdf') }}">download</a>
+  </strong></p>
+
+  <hr>
 
   <h2>
     B. PROSES LAYANAN SERTIFIKASI ISO 9001:2015
@@ -172,6 +186,8 @@
     Pengiriman sertifikat kepada pelangan
   </p>
 
+  <hr>
+
   <h2>
     C. PROSEDUR BANDING atau KELUHAN
   </h2>
@@ -190,12 +206,16 @@
     </p></li>
   </ul>
 
+  <hr>
+
   <h2>
     D. PENGKAJIAN GUGATAN
   </h2>
   <p>
     Manajemen LS-SMKP Sigma-Mi melakukan pengkajian terhadap keluahan dan pengugatan atas ketidakmampuan layanan yang dilakukan oleh LS-SMKP Sigma-Mi
   </p>
+
+  <hr>
 
   <h2>
     E. PENGANTIAN

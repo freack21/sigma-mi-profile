@@ -12,6 +12,9 @@
     Kalibrasi adalah proses untuk memastikan bahwa instrumen atau alat ukur berfungsi dengan benar dan memberikan hasil yang akurat sesuai dengan standar yang telah ditentukan. Proses ini melibatkan perbandingan antara pengukuran yang dihasilkan oleh alat ukur dengan nilai referensi yang diketahui atau standar pengukuran yang telah terbukti valid. Tujuan utama kalibrasi adalah untuk memastikan keakuratan dan keandalan hasil pengukuran, yang sangat penting dalam berbagai bidang, seperti industri, laboratorium, dan penelitian.
   </p>
 
+  <img src="{{ asset('img/gallery/kalibrasi-alat-di-pt-matahari-tire-indonesia-1.jpg') }}" alt="Ilustrasi">
+  <p class="caption">Kalibrasi Alat di PT. Matahari Tire Indonesia</p>
+
   <h4>
     1. Mengapa Kalibrasi Itu Penting?
   </h4>
@@ -87,6 +90,9 @@
     </p></li>
   </ul>
 
+  <img src="{{ asset('img/gallery/kalibrasi-alat-di-pt-tomimoti-tire-indonesia-1.jpg') }}" alt="Ilustrasi">
+  <p class="caption">Kalibrasi Alat di PT. Tomimoti Tire Indonesia</p>
+
   <h4>
     4. Frekuensi Kalibrasi
   </h4>
@@ -136,6 +142,9 @@
     Banyak lembaga sertifikasi, seperti ISO 9001 untuk manajemen mutu, mengharuskan perusahaan untuk memiliki prosedur kalibrasi yang tepat sebagai bagian dari sistem manajemen kualitas mereka. Kalibrasi yang tepat dan terstandarisasi adalah bagian integral dari sertifikasi yang menunjukkan bahwa perusahaan memenuhi standar kualitas internasional.
   </p>
 
+  <img src="{{ asset('img/gallery/kalibrasi-alat-di-pt-tomimoti-tire-indonesia-6.jpg') }}" alt="Ilustrasi">
+  <p class="caption">Kalibrasi Alat di PT. Tomimoti Tire Indonesia</p>
+
   <h4>
     7. Kesimpulan
   </h4>
@@ -143,6 +152,8 @@
     Kalibrasi adalah aspek penting dalam memastikan kualitas dan akurasi pengukuran di berbagai industri. Dengan melakukan kalibrasi secara rutin dan tepat, organisasi dapat meningkatkan akurasi hasil, mematuhi regulasi, mengurangi kesalahan, dan memastikan bahwa produk atau layanan yang diberikan sesuai dengan spesifikasi yang diinginkan. Kalibrasi tidak hanya memastikan kinerja alat ukur yang optimal, tetapi juga berkontribusi pada peningkatan efisiensi operasional dan penghematan biaya dalam jangka panjang.
   </p>
 
+
+  <hr>
 
   <h2>
     B. PROSES LAYANAN KALIBRASI
@@ -187,6 +198,8 @@
   </p>
 
 
+  <hr>
+
   <h2>
     C. KELUHAN ATAU BANDING
   </h2>
@@ -200,12 +213,16 @@
     <li><p>F.SOP.24.1-Surat Pengaduan Pelanggan: <a href="{{ asset('services/docs/Surat Pengaduan Pelanggan.docx') }}" class="link">Unduh File (.doc)</a></p></li>
     <li><p>F.SOP 27-2-Pengajuan tanggung gugat dan keuangan: <a href="{{ asset('services/docs/Surat Pengaduan Pelanggan.docx') }}" class="link">Unduh File (.doc)</a></p></li>
   </ul>
+  <hr>
+
   <h2>
     D. PENGKAJIAN GUGATAN
   </h2>
   <p>
     Manajemen Laboratorium Kalibrasi Sigma-Mi melakukan pengkajian terhadap keluahan dan pengugatan atas ketidakmampuan layanan yang dilakukan oleh Laboratorium Kalibrasi Sigma-Mi
   </p>
+  <hr>
+
   <h2>
     E. PENGANTIAN
   </h2>
