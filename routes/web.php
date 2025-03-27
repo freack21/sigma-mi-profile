@@ -20,7 +20,11 @@ Route::get('/', [LandingPageController::class, 'home']);
 Route::get('/service/{slug}', [LandingPageController::class, 'service']);
 
 Route::get('/article/{slug}', [LandingPageController::class, 'article']);
+
+Route::get('/articles', [LandingPageController::class, 'articles']);
 Route::get('/tentang', [LandingPageController::class, 'tentang']);
+Route::get('/kalibrasi', [LandingPageController::class, 'kalibrasi']);
+Route::get('/sertifikasi', [LandingPageController::class, 'sertifikasi']);
 
 Route::controller(AdminController::class)->prefix("admin")->group(function () {
   Route::get('/', 'home');

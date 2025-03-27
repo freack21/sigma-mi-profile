@@ -11,18 +11,19 @@
 
   <section class="article-content">
     <div class="row">
-      <div class="col-12 col-md-{{ isset($other_articles[0]) ? '8' : '12' }}">
+      <div class="col-12 col-md-{{ (isset($other_articles) && isset($other_articles[0])) || (isset($other_services) && isset($other_services[0])) ? '8' : '12' }}">
         <div class="article-body">
-          @yield('article_body', 'Ini adalah contoh artikel!')
+          @yield('article_body', 'Artikel tidak ditemukan!')
         </div>
       </div>
 
-      @if (isset($other_articles[0]))
+      @if ((isset($other_articles) && isset($other_articles[0])) || (isset($other_services) && isset($other_services[0])))
       <div class="col-12 col-md-3">
         <h1 class="other-title">
           Artikel Lainnya
         </h1>
 
+        @if (isset($other_articles))
         @foreach ($other_articles as $other_article)
         <div class="other-card">
           <div class="img">
@@ -35,6 +36,17 @@
           </div>
         </div>
         @endforeach
+        @endif
+
+        @if (isset($other_services))
+        @foreach ($other_services as $other_service)
+        <a href="{{ $other_service[3] }}"  class="other-service-card">
+          <span>{{ $other_service[2] ?: '-' }}</span>
+          <p>{{ $other_service[0] ?: '-' }}</p>
+        </a>
+        @endforeach
+        @endif
+
       </div>
       @endif
 

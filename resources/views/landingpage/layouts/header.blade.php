@@ -7,7 +7,25 @@
 
   <script src="https://unpkg.com/feather-icons"></script>
 
-  <title>{{ $title ?? "Sigma Mutu Indonesia" }}</title>
+  <title>{{ $title ?? 'Company Profile | PT. Sigma Mutu Indonesia' }}</title>
+
+  <meta name="description" content="{{ $meta_description ?? 'PT. Sigma Mutu Indonesia Company Profile Website' }}">
+  <meta name="keywords" content="{{ $meta_keywords ?? 'company, profile, PT Sigma Mutu Indonesia, sigma, mutu, sigmami' }}">
+  <meta name="author" content="PT. Sigma Mutu Indonesia">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="{{ $title ?? 'Company Profile | PT. Sigma Mutu Indonesia' }}">
+  <meta property="og:description" content="{{ $meta_description ?? 'PT. Sigma Mutu Indonesia Company Profile Website' }}">
+  <meta property="og:image" content="{{ $meta_image ?? asset('img/sigma-logo.png') }}">
+  <meta property="og:url" content="{{ url()->current() }}">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ $title ?? 'Company Profile | PT. Sigma Mutu Indonesia' }}">
+  <meta name="twitter:description" content="{{ $meta_description ?? 'PT. Sigma Mutu Indonesia Company Profile Website' }}">
+  <meta name="twitter:image" content="{{ $meta_image ?? asset('img/sigma-logo.png') }}">
+
   <link rel="shortcut icon" href="{{ asset('favicon/favicon.ico') }}" type="image/x-icon">
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <link rel="stylesheet" href="{{ asset('css/components/navbar/index.css') }}">
@@ -19,6 +37,7 @@
     "Sertifikasi" => "sertifikasi",
     // "Pelatihan" => "pelatihan",
     "Kalibrasi" => "kalibrasi",
+    "Pendaftaran & Lainnya" => "pendaftaran-&-lainnya",
     // "Konsultasi & Pembuatan Dokumen Mutu" => null,
   ];
 
@@ -59,6 +78,14 @@
       "Kelembaban & Kelembapan" => "/service/kalibrasi-kelembaban",
       "Dimensi" => "/service/kalibrasi-dimensi",
       "Alat Ukur Listrik" => "/service/kalibrasi-kelistrikan",
+    ],
+    "Pendaftaran & Lainnya" => [
+      "Pendaftaran Sertifikasi Halal" => "/service/pendaftaran-sertifikasi-halal",
+      "Proses Layanan Sertifikasi ISO 9001:2015, ISO 14001:2018, ISO 45001:2018, ISO 22000:2018" => "/service/proses-layanan-sertifikasi-iso-9001-2015-iso-14001-2018-iso-45001-2018-iso-22000-2018",
+      "Proses Layanan Kalibrasi" => "/service/proses-layanan-kalibrasi",
+      "Prosedur Banding atau Keluhan" => "/service/prosedur-banding-atau-keluhan",
+      "Pengkajian Gugatan" => "/service/pengkajian-gugatan",
+      "Pengantian" => "/service/pengantian",
     ],
   ];
   @endphp
@@ -138,10 +165,13 @@
             @endforeach
           </div>
           @else
-          <a href="#">{{ $parent }}</a>
+          <a href="{{ $child_menus[$parent] ?: '#' }}">{{ $parent }}</a>
           @endif
         </div>
         @endforeach
+        <div class="menu-list">
+          <a href="/tentang" style="text-transform:capitalize;">Tentang Kami</a>
+        </div>
       </div>
     </div>
   </header>

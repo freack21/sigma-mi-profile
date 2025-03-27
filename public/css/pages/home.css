@@ -1,5 +1,10 @@
 @import "../sections/articles.css";
 
+:root {
+  --hero-img: url("/img/gallery/sertifikasi-iso-9001-2015-di-pt-asa-kreasi-global-2.jpg");
+  /* --hero-img: url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+}
+
 .hero {
   display: flex;
   justify-content: center;
@@ -8,8 +13,7 @@
   gap: 1rem;
   padding: 2.5% 5%;
   height: 100vh;
-  background: url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
-    no-repeat center center/cover;
+  background: var(--hero-img) no-repeat center center/cover;
   overflow: hidden;
 }
 

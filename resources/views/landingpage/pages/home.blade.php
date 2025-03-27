@@ -15,12 +15,12 @@
     "Sertifikasi" => [
       "icon" => "file-text",
       "desc" => "Melakukan sertifikasi ISO 22000:2018, ISO 14001:2018, ISO 45001:2018, ISO 9001:2015, dan Sertifikasi Halal untuk organisasi anda.",
-      "href" => null,
+      "href" => "/sertifikasi",
     ],
     "Kalibrasi" => [
       "icon" => "activity",
       "desc" => "Kalibrasi adalah proses untuk memastikan bahwa instrumen atau alat ukur berfungsi dengan benar dan memberikan hasil yang akurat sesuai dengan standar yang telah ditentukan.",
-      "href" => "/service/kalibrasi",
+      "href" => "/kalibrasi",
     ],
     // "Pelatihan" => [
     //   "icon" => "briefcase",
@@ -47,7 +47,7 @@
           <div class="highlight">
             <h1>Jelajahi Layanan dan Jasa PT Sigma Mutu Indonesia</h1>
             <div class="line-light"></div>
-            <a href="/tentang" class="btn">Pelajari Lebih Lanjut</a>
+            {{-- <a href="/tentang" class="btn">Pelajari Lebih Lanjut</a> --}}
           </div>
         </div>
         @foreach ($services as $service => $data)

@@ -10,7 +10,7 @@
 
   <section class="article-content">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 col-md-8">
         <div class="article-body">
           <h3>1. Sejarah Perusahaan</h3>
           <p>
@@ -114,7 +114,44 @@
                 <p>Jakarta Utara 12420</p>
               </div>
             </div>
+
+            <div class="col-12 socials">
+              <div class="row">
+                <div class="col-12">
+                  <a class="social-media" href="https://www.instagram.com/pt.sigmamutuindonesia" target="_blank">
+                    <i data-feather="instagram" width="18" height='18'></i>
+                    <p>{{ "@" }}pt.sigmamutuindonesia</p>
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a class="social-media" href="mailto:sigmamutuindonesia@gmail.com" target="_blank">
+                    <i data-feather="mail" width="18" height='18'></i>
+                    <p>sigmamutuindonesia@gmail.com</p>
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a class="social-media" href="https://wa.me/6281210348333" target="_blank">
+                    <i data-feather="phone" width="18" height='18'></i>
+                    <p>(+62) 812-1034-8333</p>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 gallery">
+        <h1 class="other-title">
+          Galeri
+        </h1>
+
+        <div class="row">
+          @foreach ($gallery as $img)
+          <a target="_blank" href="{{ $img }}" class="col-6">
+            <img src="{{ $img }}" alt="Gallery Image" loading="lazy">
+          </a>
+          @endforeach
         </div>
       </div>
     </div>

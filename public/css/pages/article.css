@@ -1,7 +1,8 @@
 @import "../sections/articles.css";
 
 :root {
-  --hero-img: url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  --hero-img: url("/img/gallery/sertifikasi-iso-9001-2015-di-pt-asa-kreasi-global-2.jpg");
+  /* --hero-img: url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
 }
 
 .hero {
@@ -195,11 +196,15 @@
   width: 120%;
 }
 
-ul {
+ul,
+ol {
   margin-left: 2rem;
 }
 
-ul ul {
+ul ul,
+ol ol,
+ol ul,
+ul ol {
   margin-left: 1.1rem;
 }
 
@@ -215,6 +220,104 @@ img,
 video {
   max-width: 75%;
   margin: auto;
+  border-radius: 0.5rem;
+}
+
+.other-service-card {
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  display: block;
+  margin: 0.25rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.other-service-card span {
+  color: var(--secondary-color);
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.other-service-card p {
+  font-size: 1em;
+  margin: 0.1rem 0;
+}
+
+.other-service-card:hover {
+  margin-left: 0.5rem;
+  transform: scale(1.05);
+}
+
+.article-body .social-media {
+  color: var(--dark-color-rgb);
+}
+
+.article-body .social-media:hover {
+  color: var(--secondary-color);
+}
+
+.gallery img {
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.gallery a {
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery a:hover {
+  transform: scale(1.1);
+}
+
+.article-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 0.75rem;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.article-list:hover {
+  transform: scale(1.02);
+  background-color: var(--fifth-color);
+}
+
+.article-list:hover .body span {
+  font-weight: 600;
+}
+
+.article-list .image {
+  padding: 0.25rem;
+}
+
+.article-list .body {
+  display: flex;
+  gap: 0.1rem;
+  flex-direction: column;
+  padding-top: 0.75rem;
+  padding-right: 1rem;
+}
+
+.article-list .body span {
+  color: var(--secondary-color);
+  font-size: 0.9em;
+}
+
+.article-list .body p {
+  font-weight: 600;
+  font-size: 1em;
+  margin: 0.1rem 0;
+  text-align: left;
+}
+
+.article-list img {
+  max-width: 120px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 0.5rem;
 }
 
@@ -247,5 +350,39 @@ video {
   img,
   video {
     max-width: 100%;
+  }
+
+  .article-list {
+    gap: 0.5rem;
+  }
+
+  .article-list .image {
+    padding: 0.25rem;
+  }
+
+  .article-list .body {
+    display: flex;
+    gap: 0.1rem;
+    flex-direction: column;
+    padding-right: 1rem;
+  }
+
+  .article-list .body span {
+    color: var(--secondary-color);
+    font-size: 0.8em;
+  }
+
+  .article-list .body p {
+    font-weight: 600;
+    font-size: 0.9em;
+    margin: 0.1rem 0;
+    text-align: left;
+  }
+
+  .article-list img {
+    max-width: 96px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 0.5rem;
   }
 }

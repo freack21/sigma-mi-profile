@@ -4,7 +4,7 @@
       <h1>Artikel Terbaru</h1>
       <div class="line-light"></div>
     </div>
-    <a href="#" class="link">Lihat Semua Artikel &rightarrow;</a>
+    <a href="/articles" class="link">Lihat Semua Artikel &rightarrow;</a>
   </div>
 
   @php
@@ -61,7 +61,7 @@
   <div id="article-mobile">
 
     @if (isset($headnews['title']))
-    <div class="other-news">
+    <a href="{{ $headnews['link'] ?: '' }}" class="other-news">
       <div class="img">
         <img src="{{ $headnews['image'] ?: 'https://fakeimg.pl/200x200?text=article' }}" alt="News Image">
       </div>
@@ -69,9 +69,9 @@
         <span>{{ \Carbon\Carbon::parse($headnews['created_at'] ?: '0001-01-01')->translatedFormat('d F Y') }}</span>
         <h4 class="title">{{ $headnews['title'] ?: 'Artikel Tidak Tersedia' }}</h4>
       </div>
-    </div>
+    </a>
     @else
-    <div class="other-news">
+    <a href="" class="other-news">
       <div class="img">
         <img src="https://fakeimg.pl/200x200?text=article" alt="News Image">
       </div>
@@ -79,11 +79,11 @@
         <span>{{ \Carbon\Carbon::parse('0001-01-01')->translatedFormat('d F Y') }}</span>
         <h4 class="title">Artikel Tidak Tersedia</h4>
       </div>
-    </div>
+    </a>
     @endif
 
     @if (isset($secondnews['title']))
-    <div class="other-news">
+    <a href="{{ $secondnews['link'] ?: '' }}" class="other-news">
       <div class="img">
         <img src="{{ $secondnews['image'] ?: 'https://fakeimg.pl/200x150?text=article' }}" alt="News Image">
       </div>
@@ -91,11 +91,11 @@
         <span>{{ \Carbon\Carbon::parse($secondnews['created_at'] ?: '0001-01-01')->translatedFormat('d F Y') }}</span>
         <h4 class="title">{{ $secondnews['title'] ?: 'Artikel Tidak Tersedia' }}</h4>
       </div>
-    </div>
+    </a>
     @endif
 
     @if (isset($thirdnews['title']))
-    <div class="other-news">
+    <a href="{{ $thirdnews['link'] ?: '' }}" class="other-news">
       <div class="img">
         <img src="{{ $thirdnews['image'] ?: 'https://fakeimg.pl/200x150?text=article' }}" alt="News Image">
       </div>
@@ -103,7 +103,7 @@
         <span>{{ \Carbon\Carbon::parse($thirdnews['created_at'] ?: '0001-01-01')->translatedFormat('d F Y') }}</span>
         <h4 class="title">{{ $thirdnews['title'] ?: 'Artikel Tidak Tersedia' }}</h4>
       </div>
-    </div>
+    </a>
     @endif
 
   </div>
